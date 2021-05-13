@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "security", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "plugin:@newrelic/eslint-plugin-newrelic/react",
+    "plugin:@newrelic/eslint-plugin-newrelic/jest",
+    "plugin:@newrelic/eslint-plugin-newrelic/prettier"
+  ],
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "react/prop-types": [0],
+    "quotes": ["error", "single"],
+    "no-unused-vars": "error",
+    "no-unused-expressions": "error",
+    "prettier/prettier": ["error", {
+      "usePrettierrc": true
+    }]
+  }
+}
