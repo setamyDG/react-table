@@ -7,5 +7,5 @@ export default {
   level6: '6000',
   level7: '7000',
   level8: '8000',
-  level9: '9000'
+  level9: '9000',
 };
